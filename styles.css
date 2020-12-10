@@ -80,8 +80,12 @@ h2:after {
     border-radius: 5px !important;
 }
 
-
-
+.graficoDiv{
+    margin: 20px 40px;
+}
+div iframe{
+    max-height: 500px;
+}
 
 
 /*****         notícias         *****/
@@ -120,7 +124,7 @@ h2:after {
 .article-content {
     display: table;
     padding: 30px 0 28px;
-    color: #f64c72;
+    color: #fff;
 }
 .article-content .article-date {
     border-right: 1px solid #95A5A6;

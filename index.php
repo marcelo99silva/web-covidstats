@@ -101,7 +101,13 @@
             </div>
         </div>
     </div>
+
     <p class="updateTime" id="horaUpdate"></p>
+
+    <div class="graficoDiv">
+        <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+    </div>
+
     <section class="newsArticles">
         <div class="container">
             <h2 class="news-title">Notícias</h2>
