@@ -1,0 +1,197 @@
+div li a:hover{
+    cursor: pointer;
+}
+
+
+/*****         estatísticas covid         *****/
+.select{
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+.stats-title{
+    text-align:center;
+    padding-top:30px;
+}
+h2:after {
+    content: "";
+}
+.card-deck{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    min-width: 180px;
+    margin: 0 2%;
+    margin-top: 5px;
+    max-width: 230px;
+    border: none;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.updateTime{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+.card div {
+    padding: 2px 16px;
+}
+
+.card p {
+    font-size: large;
+    position: absolute;
+    bottom: 0;
+}
+
+.ativosCard{
+    background-color: #edc797;
+    border-bottom: 10px solid #f1e900;
+    min-height: 130px;
+    border-radius: 5px !important;
+}
+.confirmadosCard{
+    background-color: #66b3ff;
+  border-bottom: 10px solid #0000ff;
+    min-height: 130px;
+    border-radius: 5px !important;
+}
+.recuperadosCard{
+    background-color: #bff1c9;
+    border-bottom: 10px solid #00ff00;
+    min-height: 130px;
+    border-radius: 5px !important;
+}
+.mortosCard{
+    background-color: #edb1b1;
+    border-bottom: 10px solid #ff0000;
+    min-height: 130px;
+    border-radius: 5px !important;
+}
+
+
+
+
+
+/*****         notícias         *****/
+
+.newsArticles .news-title {
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.newsArticles .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.newsArticles .article {
+    margin-bottom: 30px;
+}
+.article .inner {
+    background-color: #4457c0ef;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    height: 100%;
+}
+.article .inner:hover {
+    background-color: #4457c0;
+}
+.article .article-image {
+    height: 180px;
+    overflow: hidden;
+}
+.article .article-image img {
+    width: 100%;
+}
+.article-content {
+    display: table;
+    padding: 30px 0 28px;
+    color: #f64c72;
+}
+.article-content .article-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    font-family: "Lato", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+.article-content .article-date span {
+    font-size: 15px; 
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+.article-content .article-date strong {
+    font-size: 25px; 
+}
+.article-content .article-header {
+    color: #000;
+    display: table-cell;
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+/*****         mobile         *****/
+
+@media only screen and (max-width: 658px) {
+    .card p{
+        font-size: medium;
+    }
+    .card h5{
+        font-size: medium;
+    }
+    .card {
+        font-size: small;
+        max-width: 50px;
+    }
+    .card-deck{
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    .updateTime{
+        font-size: small;
+        max-width: fit-content;
+    }
+    h3, h2{
+        font-size: large;
+    }
+    .select{
+        font-size: small;
+        margin-top: 20px !important;
+    }
+    .ativosCard{
+        min-height: 100px;
+    }
+    .confirmadosCard{
+        min-height: 100px;
+    }
+    .recuperadosCard{
+        min-height: 100px;
+    }
+    .mortosCard{
+        min-height: 100px;
+    }
+}
