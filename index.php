@@ -18,7 +18,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="./main.0cf8b554.js"></script>
 <body> 
-    <!-- Add your content of header -->
+
     <header>
         <nav class="navbar navbar-default active">
             <div class="container">
@@ -39,7 +39,7 @@
                 <li><a onClick="document.getElementById('statsStop').scrollIntoView();">Estatísticas</a></li>
                 <li>
                     <p>
-                        <a onClick="document.getElementById('horaUpdate').scrollIntoView();" class="btn btn-default navbar-btn" title="">Notícias</a>
+                        <a onClick="document.getElementById('noticias').scrollIntoView();" class="btn btn-default navbar-btn" title="">Notícias</a>
                     </p>
                 </li>
                 </ul>
@@ -48,7 +48,6 @@
         </nav>
     </header>
 
-    <!-- Add your site or app content here -->
     <div class="hero-full-container background-image-container white-text-container">
         <div class="container">
             <div class="row">
@@ -104,11 +103,11 @@
 
     <p class="updateTime" id="horaUpdate"></p>
 
-    <div class="graficoDiv">
+    <div id="grafico" class="graficoDiv">
         <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
     </div>
 
-    <section class="newsArticles">
+    <section id="noticias" class="newsArticles">
         <div class="container">
             <h2 class="news-title">Notícias</h2>
             <div id="artigosDiv" class="row">
@@ -269,7 +268,7 @@
                     });
 
                 }else{
-                    document.getElementById("artigosDiv").innerHTML = "Não existem notícias específicas desse país.";
+                    document.getElementById("artigosDiv").innerHTML = "Não existem notícias específicas do país escolhido.";
                 }
             },
         })

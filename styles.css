@@ -1,7 +1,9 @@
 div li a:hover{
     cursor: pointer;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 /*****         estatísticas covid         *****/
 .select{
@@ -36,11 +38,6 @@ h2:after {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.updateTime{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
 }
 .card:hover {
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
@@ -85,6 +82,12 @@ h2:after {
 }
 div iframe{
     max-height: 500px;
+}
+.updateTime{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: fit-content;
 }
 
 
