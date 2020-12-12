@@ -11,7 +11,7 @@
     <link href="./main.550dcf66.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
-    <link rel="icon" href="./assets//favicon.ico">
+    <link rel="icon" href="./assets//ldpi.png">
     <title>Tracking Covid-19 Ao Minuto</title>
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
