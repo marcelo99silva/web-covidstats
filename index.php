@@ -19,6 +19,7 @@
 <script type="text/javascript" src="./main.0cf8b554.js"></script>
 <body> 
 
+    <!-- Header do corpo do site  -->
     <header>
         <nav class="navbar navbar-default active">
             <div class="container">
@@ -48,6 +49,8 @@
         </nav>
     </header>
 
+
+    <!-- Secção inicial  -->
     <div class="hero-full-container background-image-container white-text-container">
         <div class="container">
             <div class="row">
@@ -60,7 +63,10 @@
             </div>
         </div>
     </div>
+
     <a id="statsStop" style="margin-top:20px;"></a>
+
+    <!-- Lista de todos os países  -->
     <div class="select">
         <select id="selectCountries" onChange="selectPais()">
             <option>Global</option>
@@ -71,7 +77,10 @@
             ?>
         </select>
     </div>
+
     <h2 class="stats-title">Estatísticas</h2>
+
+    <!-- Secção com estatísticas COVID-19  -->
     <div class = cards>
         <div class="card-deck">
             <div class="card">
@@ -101,12 +110,17 @@
         </div>
     </div>
 
+    <!-- Data e hora da última atualização dos dados  -->
     <p class="updateTime" id="horaUpdate"></p>
+    
 
+    <!-- Gráfico de estatísticas globais  -->
     <div id="grafico" class="graficoDiv">
         <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
     </div>
+    
 
+    <!-- Secção de notícias  -->
     <section id="noticias" class="newsArticles">
         <div class="container">
             <h2 class="news-title">Notícias</h2>
@@ -116,7 +130,7 @@
     </section>
 
 
-
+    <!-- Footer da página  -->
     <footer class="footer-container white-text-container">
     <div class="container">
         <div class="row">
@@ -145,6 +159,7 @@
     </div>
     </footer>
 
+    <!-- Scripts de animação da template -->
     <script>
     document.addEventListener("DOMContentLoaded", function (event) {
         navbarFixedTopAnimation();
@@ -160,9 +175,11 @@
 </body>
 
 <script>
+    // Inicialização da página com dados globais
     getDadosCovidPais("Global");
     getNews("Global");
     
+    // Script a executar após seleção do pais
     function selectPais(){
         var pais = document.getElementById("selectCountries").value;
         var countriesList = <?php echo json_encode($countriesList); ?> ;
@@ -178,6 +195,7 @@
         getNews(key);
     }
 
+    // Script que pega dados Covid da api do pais escolhido
     function getDadosCovidPais(pais){
         var resposta;
         $.ajax({
@@ -200,6 +218,7 @@
         })
     }
 
+    // Script que pega notícias da api do pais escolhido
     function getNews(pais){
         var resposta;
         $.ajax({
